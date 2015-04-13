@@ -77,6 +77,7 @@ app.jinja_env.globals['csrf_token'] = generate_csrf_token
 
 @app.route('/createlink', methods=["POST"])
 def createlink():
+    import ipdb;ipdb.set_trace()
     projects = request.json['projects']
     expire = request.json['expire']
 
